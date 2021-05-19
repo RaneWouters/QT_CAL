@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>1062</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>1</y>
+      <width>791</width>
+      <height>371</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>450</y>
+      <width>778</width>
+      <height>612</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>80</height>
+     </size>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="twond">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2nd</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Pi">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>π</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Sin">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>sin</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Cos">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>cos</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Tan">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>tan</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="Square">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>x^2</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reciprocal">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1/x</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Ln">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>ln</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Exp">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>exp</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Mod">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>mod</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="Sqrt">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2√x</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="leftparenthsis">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>(</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="rightparenthsis">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>)</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clean">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>&lt;--</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Divide">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>/</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="Pow">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>x^y</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="seven">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>7</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="eight">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>8</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="nine">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>9</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Times">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>*</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="TenPow">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>10^x</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="four">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="five">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="six">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>6</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Minus">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QPushButton" name="Abs">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>|x|</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="one">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="two">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="three">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Plus">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QPushButton" name="Fractorial">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>n!</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="negate">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+/-</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="zero">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="point">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>.</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="equal">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>=</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>626</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>80</height>
+     </size>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QPushButton" name="MC">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>MC</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="MR">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>MR</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Mplus">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>M+</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Mminus">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>M-</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="MS">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>MS</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
