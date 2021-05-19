@@ -120,7 +120,7 @@ void MainWindow::on_Fractorial_clicked()
 void MainWindow::on_Pi_clicked()
 {
     UserText += "3.141592653";
-    UserText += "pi";
+    UserShowText += "pi";
     Count.push_back(2);
     ui->textBrowser->setText(QString::fromStdString(UserShowText));
 }
@@ -128,7 +128,7 @@ void MainWindow::on_Pi_clicked()
 void MainWindow::on_reciprocal_clicked()
 {
     UserText += "r";
-    UserText += "1/";
+    UserShowText += "1/";
     Count.push_back(2);
     ui->textBrowser->setText(QString::fromStdString(UserShowText));
 }
@@ -253,7 +253,7 @@ void MainWindow::on_Tan_clicked()
 void MainWindow::on_negate_clicked()
 {
     UserText += "n";
-    UserText += "+/-";
+    UserShowText += "+/-";
     Count.push_back(3);
     ui->textBrowser->setText(QString::fromStdString(UserShowText));
 }
@@ -285,10 +285,12 @@ void MainWindow::on_equal_clicked()
         string t = to_string(value);
         ui->textBrowser->setText(QString::fromStdString(t));
         UserText.clear();
+        UserShowText.clear();
         In.GetVec().clear();
     } catch (...) {
         ui->textBrowser->setText("ERROR!");
         UserText.clear();
+        UserShowText.clear();
         In.GetVec().clear();
     }
 }
@@ -388,6 +390,7 @@ void MainWindow::on_clean_clicked()
             UserShowText.pop_back();
         }
     }
+    UserText.pop_back();
     Count.pop_back();
 
     ui->textBrowser->setText(QString::fromStdString(UserShowText));

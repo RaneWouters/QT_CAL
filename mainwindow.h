@@ -86,6 +86,8 @@ private slots:
 
     void on_clean_clicked();
 
+    void on_MS_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
