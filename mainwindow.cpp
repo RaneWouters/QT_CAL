@@ -398,5 +398,57 @@ void MainWindow::on_clean_clicked()
 
 void MainWindow::on_MS_clicked()
 {
+    In.Init(UserText);
+    if (IsNum(*((In.GetVec().end()-1)->end()-1))) {
+        MRegister.MS();
+    } else {
+        ui->textBrowser->setText("ERROR!");
+    }
+    In.GetVec().clear();
+}
 
+void MainWindow::on_Mminus_clicked()
+{
+    In.Init(UserText);
+    if (IsNum(*((In.GetVec().end()-1)->end()-1))) {
+        MRegister.MMinus();
+    } else {
+        ui->textBrowser->setText("ERROR!");
+    }
+    In.GetVec().clear();
+}
+
+void MainWindow::on_Mplus_clicked()
+{
+    In.Init(UserText);
+    if (IsNum(*((In.GetVec().end()-1)->end()-1))) {
+        MRegister.MPlus();
+    } else {
+        ui->textBrowser->setText("ERROR!");
+    }
+    In.GetVec().clear();
+}
+
+void MainWindow::on_MR_clicked()
+{
+    double value = MRegister.MR();
+
+    int t = value;
+    int size = 0;
+    while (t/10 != 0) {
+        ++size;
+        t /= 10;
+    }
+    size += 8;
+    Count.push_back(size);
+
+    UserText += to_string(value);
+    UserShowText += to_string(value);
+    ui->textBrowser->setText(QString::fromStdString(UserShowText));
+}
+
+void MainWindow::on_MC_clicked()
+{
+    MRegister.MC();
+    Count.pop_back();
 }

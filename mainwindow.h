@@ -88,6 +88,14 @@ private slots:
 
     void on_MS_clicked();
 
+    void on_Mminus_clicked();
+
+    void on_Mplus_clicked();
+
+    void on_MR_clicked();
+
+    void on_MC_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

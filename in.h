@@ -6,6 +6,8 @@
 #include <vector>
 using namespace std;
 
+bool IsNum(char&);
+
 class In {
    public:
     In() = default;
