@@ -34,11 +34,16 @@ set(PROJECT_SOURCES
         in.cpp
         mainwindow.cpp
         register.cpp
+        form.cpp
+        HQ.cpp
+        form.h
         in.h
         operator.h
         register.h
         reversepolish.h
         mainwindow.h
+        HQ.h
+        form.ui
         mainwindow.ui
         ${TS_FILES}
 )

@@ -4,6 +4,7 @@
 #include "in.h"
 #include "reversepolish.h"
 #include "register.h"
+#include "form.h"
 
 std::string UserText;
 std::string UserShowText;
@@ -479,4 +480,10 @@ void MainWindow::on_MC_clicked()
 {
     MRegister.MC();
     //Count.pop_back();
+}
+
+void MainWindow::on_HQ_clicked()
+{
+    Form* new_window = new Form();
+    new_window->show();
 }

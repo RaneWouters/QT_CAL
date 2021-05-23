@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>732</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(108,108,108);
+border-color: rgb(255, 255, 255);
+border: 1px;
+color: rgb(255, 255, 255);
+font-size: 28px;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0">
+    <widget class="QTextEdit" name="textEdit1">
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 80px;
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="Plus">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(215,95,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="Minus">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(215,95,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="Times">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(215,95,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+       </property>
+       <property name="text">
+        <string>*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="Divide">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(215,95,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label1">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 36px;
+</string>
+     </property>
+     <property name="text">
+      <string>please enter the second operand</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 36px;
+
+</string>
+     </property>
+     <property name="text">
+      <string>please enter the first operand</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QTextEdit" name="textEdit2">
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 80px;
+
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(0,0,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 96px;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

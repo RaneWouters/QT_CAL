@@ -96,6 +96,8 @@ private slots:
 
     void on_MC_clicked();
 
+    void on_HQ_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
