@@ -487,3 +487,9 @@ void MainWindow::on_HQ_clicked()
     Form* new_window = new Form();
     new_window->show();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    system("terminator -x bash -c '/home/ranewouters/CAL/demo'");
+//    system("terminator");
+}

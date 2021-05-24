@@ -32,33 +32,26 @@ font-size: 28px;
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="1" column="1">
-     <layout class="QVBoxLayout" name="verticalLayout"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);
-font-size: 96px;
-</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0" colspan="2">
+    <item row="1" column="0" colspan="2">
      <layout class="QGridLayout" name="gridLayout">
       <property name="sizeConstraint">
        <enum>QLayout::SetFixedSize</enum>
       </property>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="HQ">
+        <property name="text">
+         <string>HQ</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Kruskal</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QPushButton" name="twond">
@@ -212,10 +205,10 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="3" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item row="10" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
-         <widget class="QPushButton" name="Square">
+         <widget class="QPushButton" name="Fractorial">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -237,7 +230,7 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>x^2</string>
+           <string>n!</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -245,7 +238,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="reciprocal">
+         <widget class="QPushButton" name="negate">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -259,15 +252,14 @@ font-size: 28px;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
+           <string notr="true">background-color: rgba(0,0,0);
 border-color: rgb(255, 255, 255);
 border: 0px;
 color: rgb(255, 255, 255);
-font-size: 28px;
-</string>
+font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>1/x</string>
+           <string>+/-</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -275,7 +267,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Ln">
+         <widget class="QPushButton" name="zero">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -289,15 +281,14 @@ font-size: 28px;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
+           <string notr="true">background-color: rgba(0,0,0);
 border-color: rgb(255, 255, 255);
 border: 0px;
 color: rgb(255, 255, 255);
-font-size: 28px;
-</string>
+font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>ln</string>
+           <string>0</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -305,7 +296,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Exp">
+         <widget class="QPushButton" name="point">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -319,15 +310,14 @@ font-size: 28px;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
+           <string notr="true">background-color: rgba(0,0,0);
 border-color: rgb(255, 255, 255);
 border: 0px;
 color: rgb(255, 255, 255);
-font-size: 28px;
-</string>
+font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>exp</string>
+           <string>.</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -335,7 +325,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="Mod">
+         <widget class="QPushButton" name="equal">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -349,7 +339,7 @@ font-size: 28px;
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
+           <string notr="true">background-color: rgba(215,95,0);
 border-color: rgb(255, 255, 255);
 border: 0px;
 color: rgb(255, 255, 255);
@@ -357,7 +347,7 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>mod</string>
+           <string>=</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -366,7 +356,7 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="4" column="0">
+      <item row="6" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QPushButton" name="Sqrt">
@@ -543,10 +533,10 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="8" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item row="7" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QPushButton" name="Fractorial">
+         <widget class="QPushButton" name="Pow">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -568,7 +558,7 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>n!</string>
+           <string>x^y</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -576,7 +566,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="negate">
+         <widget class="QPushButton" name="seven">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -597,7 +587,7 @@ color: rgb(255, 255, 255);
 font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>+/-</string>
+           <string>7</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -605,7 +595,7 @@ font-size: 28px;</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="zero">
+         <widget class="QPushButton" name="eight">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -626,7 +616,7 @@ color: rgb(255, 255, 255);
 font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>0</string>
+           <string>8</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -634,7 +624,7 @@ font-size: 28px;</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="point">
+         <widget class="QPushButton" name="nine">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -655,7 +645,7 @@ color: rgb(255, 255, 255);
 font-size: 28px;</string>
           </property>
           <property name="text">
-           <string>.</string>
+           <string>9</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -663,7 +653,7 @@ font-size: 28px;</string>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="equal">
+         <widget class="QPushButton" name="Times">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -677,7 +667,7 @@ font-size: 28px;</string>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgba(215,95,0);
+           <string notr="true">background-color: rgba(68,68,68);
 border-color: rgb(255, 255, 255);
 border: 0px;
 color: rgb(255, 255, 255);
@@ -685,7 +675,7 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>=</string>
+           <string>*</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -694,7 +684,158 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="7" column="0">
+      <item row="8" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QPushButton" name="TenPow">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+          </property>
+          <property name="text">
+           <string>10^x</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="four">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,0,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;</string>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="five">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,0,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;</string>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="six">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,0,0);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;</string>
+          </property>
+          <property name="text">
+           <string>6</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Minus">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="9" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
          <widget class="QPushButton" name="Abs">
@@ -861,10 +1002,10 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="6" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item row="5" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="TenPow">
+         <widget class="QPushButton" name="Square">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -886,7 +1027,7 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>10^x</string>
+           <string>x^2</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -894,94 +1035,7 @@ font-size: 28px;
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="four">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>4</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="five">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>5</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="six">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>6</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Minus">
+         <widget class="QPushButton" name="reciprocal">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -1003,7 +1057,97 @@ font-size: 28px;
 </string>
           </property>
           <property name="text">
-           <string>-</string>
+           <string>1/x</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Ln">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+          </property>
+          <property name="text">
+           <string>ln</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Exp">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+          </property>
+          <property name="text">
+           <string>exp</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Mod">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(68,68,68);
+border-color: rgb(255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);
+font-size: 28px;
+</string>
+          </property>
+          <property name="text">
+           <string>mod</string>
           </property>
           <property name="flat">
            <bool>true</bool>
@@ -1012,7 +1156,7 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="0" column="0">
+      <item row="3" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_8">
         <item>
          <widget class="QPushButton" name="MC">
@@ -1126,165 +1270,25 @@ font-size: 28px;
         </item>
        </layout>
       </item>
-      <item row="5" column="0">
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <widget class="QPushButton" name="Pow">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;
-</string>
-          </property>
-          <property name="text">
-           <string>x^y</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="seven">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>7</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="eight">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>8</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="nine">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(0,0,0);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;</string>
-          </property>
-          <property name="text">
-           <string>9</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="Times">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>70</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgba(68,68,68);
-border-color: rgb(255, 255, 255);
-border: 0px;
-color: rgb(255, 255, 255);
-font-size: 28px;
-</string>
-          </property>
-          <property name="text">
-           <string>*</string>
-          </property>
-          <property name="flat">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="HQ">
-        <property name="text">
-         <string>HQ</string>
-        </property>
-       </widget>
-      </item>
      </layout>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font-size: 96px;
+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
