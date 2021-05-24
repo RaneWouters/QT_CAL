@@ -9,32 +9,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="58"/>
+        <location filename="form.ui" line="61"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="79"/>
+        <location filename="form.ui" line="82"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="100"/>
+        <location filename="form.ui" line="103"/>
         <source>*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="121"/>
+        <location filename="form.ui" line="124"/>
         <source>/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="138"/>
+        <location filename="form.ui" line="141"/>
         <source>please enter the second operand</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="form.ui" line="154"/>
+        <location filename="form.ui" line="157"/>
         <source>please enter the first operand</source>
         <translation type="unfinished"></translation>
     </message>

@@ -63,10 +63,13 @@ void Form::on_Divide_clicked()
     QString Q_rhs = ui->textEdit2->toPlainText();
     string lhs = Q_lhs.toStdString();
     string rhs = Q_rhs.toStdString();
+
     string value_remain = HQ_cal::Divide(lhs, rhs).remain;
     string value_quotion = HQ_cal::Divide(lhs, rhs).quotion;
-    QString Q_value_quotion = QString::fromStdString("remain is " + value_remain);
-    QString Q_value_remain = QString::fromStdString("quotion is " + value_quotion);
-    ui->textEdit->setText(Q_value_remain + '\n');
-    ui->textEdit->setText(Q_value_quotion);
+    QString Q_remain = QString::fromStdString(value_remain);
+    QString Q_quotion = QString::fromStdString(value_quotion);
+
+    ui->textEdit->clear();
+    ui->textEdit->append("remain is " + Q_remain);
+    ui->textEdit->append("quotion is " + Q_quotion);
 }

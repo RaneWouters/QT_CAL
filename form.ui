@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="windowOpacity">
+   <double>0.900000000000000</double>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgba(108,108,108);
 border-color: rgb(255, 255, 255);

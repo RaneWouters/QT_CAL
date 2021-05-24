@@ -38,7 +38,7 @@ std::string HQ_cal::ValuetoString(int n) {
 }
 
 int HQ_cal::Compare(std::string lhs, std::string rhs) {
-    return (lhs.length() == rhs.length()) ? (lhs > rhs)
+    return (lhs.length() == rhs.length()) ? (lhs >= rhs)
                                           : (lhs.length() - rhs.length());
 }
 
@@ -107,7 +107,7 @@ Divide_str HQ_cal::Divide(std::string lhs, std::string rhs) {
 
     std::string temp;
     if (lenth1 != lenth2) {
-        temp = lhs.substr(0, lenth1 - lenth2);
+        temp = lhs.substr(0, lenth1 - lenth2 + 1);
     } else {
         temp = lhs;
     }
