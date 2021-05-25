@@ -5,6 +5,7 @@
 #include "reversepolish.h"
 #include "register.h"
 #include "form.h"
+using namespace std;
 
 std::string UserText;
 std::string UserShowText;

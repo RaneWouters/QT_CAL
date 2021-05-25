@@ -40,14 +40,6 @@
     </message>
 </context>
 <context>
-    <name>Graph</name>
-    <message>
-        <location filename="graph.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainWindow</name>
     <message>
         <location filename="mainwindow.ui" line="20"/>
