@@ -112,25 +112,25 @@ Divide_str HQ_cal::Divide(std::string lhs, std::string rhs) {
         temp = lhs;
     }
 
-//    std::cout << "lhs: " << lhs << std::endl;
-//    std::cout << "temp: " << temp << std::endl;
+    //    std::cout << "lhs: " << lhs << std::endl;
+    //    std::cout << "temp: " << temp << std::endl;
 
     for (int i = 0; i <= lenth1 - lenth2; ++i) {
         int count = 0;
 
-//        std::cout << "temp: " << temp << std::endl;
+        //        std::cout << "temp: " << temp << std::endl;
 
         while (Compare(temp, rhs) > 0) {
-//            std::cout << "compare: " << Compare(temp, rhs);
+            //            std::cout << "compare: " << Compare(temp, rhs);
             temp = Minus(temp, rhs);
             ++count;
         }
 
-//        std::cout << "temp: " << temp << std::endl;
+        //        std::cout << "temp: " << temp << std::endl;
 
         remain += std::to_string(count);
 
-//        std::cout << "remain: " << remain << std::endl;
+        //        std::cout << "remain: " << remain << std::endl;
 
         if (i != lenth1 - lenth2) {
             temp += lhs.at(lenth2 + i);

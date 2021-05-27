@@ -231,7 +231,7 @@ class Sqrt : public UnaryOperator {
     int precedence = 3;
 };
 
-//class Power2 : public UnaryOperator {
+// class Power2 : public UnaryOperator {
 //   public:
 //    Power2() = default;
 //    double GetValue() { return pow(2, rhs); }
@@ -264,7 +264,7 @@ class Negate : public UnaryOperator {
 class Reciprocal : public UnaryOperator {
    public:
     Reciprocal() = default;
-    double GetValue() { return 1/rhs; }
+    double GetValue() { return 1 / rhs; }
     int GetPrecedence() { return this->precedence; }
 
    protected:

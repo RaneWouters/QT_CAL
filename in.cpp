@@ -40,9 +40,9 @@ void In::Init(string InText) {
         } else if (*it == '.') {
             if (IsNum(*(it - 1))) {
                 (this->target.end() - 1)->push_back(*it);
-            } else if(*(it - 1) == ')') {
+            } else if (*(it - 1) == ')') {
                 throw 1;
-            }else {
+            } else {
                 this->target.push_back("0.");
             }
         } else if (*it == '-') {
@@ -74,11 +74,11 @@ void In::ShowTarget() {
 }
 
 void MRegister::MS() {
-    this->value = stod(*(In.target.end()-1));
+    this->value = stod(*(In.target.end() - 1));
 }
 void MRegister::MPlus() {
-    this->value += stod(*(In.target.end()-1));
+    this->value += stod(*(In.target.end() - 1));
 }
 void MRegister::MMinus() {
-    this->value -= stod(*(In.target.end()-1));
+    this->value -= stod(*(In.target.end() - 1));
 }

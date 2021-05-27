@@ -1,23 +1,18 @@
 #include "form.h"
-#include "ui_form.h"
-#include "HQ.h"
 #include <string>
+#include "HQ.h"
+#include "ui_form.h"
 using namespace std;
 
-Form::Form(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Form)
-{
+Form::Form(QWidget* parent) : QWidget(parent), ui(new Ui::Form) {
     ui->setupUi(this);
 }
 
-Form::~Form()
-{
+Form::~Form() {
     delete ui;
 }
 
-void Form::on_Plus_clicked()
-{
+void Form::on_Plus_clicked() {
     QString Q_lhs = ui->textEdit1->toPlainText();
     QString Q_rhs = ui->textEdit2->toPlainText();
     string lhs = Q_lhs.toStdString();
@@ -27,8 +22,7 @@ void Form::on_Plus_clicked()
     ui->textEdit->setText(Q_value);
 }
 
-void Form::on_Minus_clicked()
-{
+void Form::on_Minus_clicked() {
     QString Q_lhs = ui->textEdit1->toPlainText();
     QString Q_rhs = ui->textEdit2->toPlainText();
 
@@ -46,8 +40,7 @@ void Form::on_Minus_clicked()
     ui->textEdit->setText(Q_value);
 }
 
-void Form::on_Times_clicked()
-{
+void Form::on_Times_clicked() {
     QString Q_lhs = ui->textEdit1->toPlainText();
     QString Q_rhs = ui->textEdit2->toPlainText();
     string lhs = Q_lhs.toStdString();
@@ -57,8 +50,7 @@ void Form::on_Times_clicked()
     ui->textEdit->setText(Q_value);
 }
 
-void Form::on_Divide_clicked()
-{
+void Form::on_Divide_clicked() {
     QString Q_lhs = ui->textEdit1->toPlainText();
     QString Q_rhs = ui->textEdit2->toPlainText();
     string lhs = Q_lhs.toStdString();

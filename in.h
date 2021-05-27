@@ -56,5 +56,4 @@ class MRegister {
 //    this->target.push_back(")");
 //}
 
-
 #endif

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-struct Divide_str{
+struct Divide_str {
     std::string remain;
     std::string quotion;
 };
@@ -22,4 +22,4 @@ std::string Minus(std::string lhs, std::string rhs);
 std::string Times(std::string lhs, std::string rhs);
 Divide_str Divide(std::string lhs, std::string rhs);
 
-}// namespace HQ_cal
+}  // namespace HQ_cal

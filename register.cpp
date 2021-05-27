@@ -61,14 +61,14 @@ void OperatorInit(class OperatorFactory& OperatorFactory) {
 }
 
 bool OperatorFactory::Exist(string temp) {
-    if(this->ms_register.end() != this->ms_register.find(temp))
+    if (this->ms_register.end() != this->ms_register.find(temp))
         return 1;
     return 0;
 }
 
 bool OperatorFactory::Exist(char& temp) {
     string t(1, temp);
-    if(this->ms_register.end() != this->ms_register.find(t))
+    if (this->ms_register.end() != this->ms_register.find(t))
         return 1;
     return 0;
 }
