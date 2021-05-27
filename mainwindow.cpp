@@ -106,8 +106,8 @@ void MainWindow::on_TenPow_clicked()
 void MainWindow::on_Abs_clicked()
 {
     UserText += "|";
-    UserShowText += "abs";
-    Count.push_back(3);
+    UserShowText += "|";
+    Count.push_back(1);
     ui->lineEdit->setText(QString::fromStdString(UserShowText));
 }
 
@@ -255,8 +255,8 @@ void MainWindow::on_Tan_clicked()
 void MainWindow::on_negate_clicked()
 {
     UserText += "n";
-    UserShowText += "+/-";
-    Count.push_back(3);
+    UserShowText += "-";
+    Count.push_back(1);
     ui->lineEdit->setText(QString::fromStdString(UserShowText));
 }
 
@@ -285,7 +285,8 @@ void MainWindow::on_equal_clicked()
         double value = RPCalculate(target);
 
         string t = to_string(value);
-        ui->lineEdit->setText(QString::fromStdString(t));
+        ui->lineEdit->setText(QString::fromStdString(UserShowText)
+                              +"="+QString::fromStdString(t));
 
         UserText.clear();
         UserShowText.clear();
